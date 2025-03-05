@@ -1,13 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap');
+
 body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: black;
+    background: url('https://source.unsplash.com/1600x900/?batik,texture') no-repeat center center/cover;
+    color: #4A3627;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(255, 243, 224, 0.9);
+    padding: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #9C5221;
+}
+
+.slogan {
+    font-size: 1.2em;
+    color: #7D3C17;
+    font-style: italic;
+}
+
+/* NAVBAR STYLES */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 243, 224, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #9C5221;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding-right: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #7D3C17;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #C67F4F;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.content, .events {
+    margin: 40px auto;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #9C5221;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.join-button {
+    background: #C67F4F;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.join-button:hover {
+    background: #9C5221;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid #C67F4F;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: rgba(255, 243, 224, 0.9);
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
