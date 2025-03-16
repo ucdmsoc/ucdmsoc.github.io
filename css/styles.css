@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: rgba(255, 243, 224, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 30px;
     text-transform: uppercase;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 243, 224, 0.95);
+    background: rgba(255, 243, 224, 0.9);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
