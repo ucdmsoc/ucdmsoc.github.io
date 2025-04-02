@@ -125,9 +125,42 @@ p {
 
 footer {
     background: rgba(255, 243, 224, 0.9);
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 14px;
     margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.instagram {
+    background-image: url('../static/white_instagram_logo.png');
+}
+
+.instagram:hover {
+    background-image: url('../static/instagram_logo.png');
+}
+
+.tiktok {
+    background-image: url('../static/white_tiktok_logo.jpg');
+}
+
+.tiktok:hover {
+    background-image: url('../static/tiktok_logo.svg');
 }
 
 html {
