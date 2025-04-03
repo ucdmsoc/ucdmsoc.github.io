@@ -30,16 +30,32 @@ h1 {
 
 /* NAVBAR STYLES */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 243, 224, 0.9);
-    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 243, 224, 0.9);
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #9C5221;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #9C5221;
 }
 
 .logo {
@@ -123,6 +139,20 @@ p {
     transform: scale(1.05);
 }
 
+.contact-links a {
+    background: linear-gradient(45deg, #C67F4F, #9C5221);
+    background-size: 200% 200%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: background-position 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact-links a:hover {
+    background-position: right bottom;
+    transform: scale(1.1);
+}
+
 footer {
     background: rgba(255, 243, 224, 0.9);
     padding: 10px 20px;
@@ -165,4 +195,38 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        position: fixed;  
+        top: 15px;
+        right: 15px;  
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001; 
+        display: block;  
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(255, 243, 224, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+        display: block;
+    }
+
+    .menu-checkbox:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
 }
