@@ -73,6 +73,14 @@ nav {
     display: inline-block;
 }
 
+.membershipPerks {
+    display: inline-block
+}
+
+.resourceLinks {
+    display: inline-block
+}
+
 .nav-links {
     list-style: none;
     display: flex;
