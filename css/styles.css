@@ -66,7 +66,11 @@ nav {
 }
 
 .membership-links li{
-    displya: inline-block;
+    display: inline-block;
+}
+
+.resource-links li{
+    display: inline-block;
 }
 
 .nav-links {
