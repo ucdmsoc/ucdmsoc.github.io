@@ -65,6 +65,10 @@ nav {
     margin-left: 10px;
 }
 
+.membership-links li{
+    displya: inline-block;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
