@@ -152,12 +152,62 @@ p {
 }
 
 .contact-links a {
+    position: relative;
+    display: inline-block;
     background: linear-gradient(45deg, #C67F4F, #9C5221);
     background-size: 200% 200%;
     padding: 5px 10px;
+    left: 10px;
     border-radius: 5px;
     color: white;
     transition: background-position 0.3s ease-in-out, transform 0.2s ease-in-out;
+    overflow: visible;
+}
+
+.contact-links a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.contact-links a:hover::after {
+    animation: trail-slide 1.1s ease forwards;
+}
+
+
+@keyframes trail-slide {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    60% {
+        left: var(--trail-distance, 100px);
+        opacity: 1;
+    }
+    100% {
+        left: var(--trail-distance, 100px);
+        opacity: 0;
+    }
+}
+
+.hover-img.insta::after {
+    background-image: url('../static/instagram_logo.png');
+}
+
+.hover-img.tiktoks::after {
+    background-image: url('../static/tiktok_logo.svg');
+}
+
+.hover-img.linktree::after {
+    background-image: url('../static/linktree_logo.png');
 }
 
 .contact-links a:hover {
